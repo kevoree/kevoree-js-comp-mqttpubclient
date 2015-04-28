@@ -1,0 +1,14 @@
+add node0: JavascriptNode
+add sync: WSGroup
+add node0.pubClient: MQTTPubClient
+add node0.ticker: Ticker
+add chan: LocalChannel
+
+attach node0 sync
+
+bind node0.pubClient.pub chan
+bind node0.ticker.tick chan
+
+set node0.pubClient.host = 'mqtt.kevoree.org'
+set node0.pubClient.port = '81'
+set node0.pubClient.topic = 'mytopic'

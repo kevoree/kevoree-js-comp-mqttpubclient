@@ -1,0 +1,28 @@
+{
+  "name": "kevoree-comp-mqttpubclient",
+  "version": "1.0.0",
+  "main": "./lib/MQTTPubClient.js",
+  "kevoree": {
+    "package": "org.kevoree.library"
+  },
+  "scripts": {
+    "prepublish": "grunt",
+    "postpublish": "grunt publish"
+  },
+  "keywords": [
+    "kevoree-std-lib",
+    "kevoree",
+    "library",
+    "comp"
+  ],
+  "dependencies": {
+    "kevoree-entities": "^8.0.0",
+    "mqtt": "^1.1.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.1",
+    "grunt-kevoree": "^5.0.0",
+    "grunt-kevoree-genmodel": "^2.0.0",
+    "grunt-kevoree-registry": "^2.0.0"
+  }
+}
