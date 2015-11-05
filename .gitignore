@@ -28,3 +28,5 @@ node_modules
 
 .deploy_units
 .idea
+
+kevlib.json
