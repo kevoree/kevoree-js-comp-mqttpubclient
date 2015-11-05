@@ -1,6 +1,6 @@
 {
-    "class": "org.kevoree.ContainerRoot@0.0079066830221563581432126772060",
-    "generated_KMF_ID": "0.0079066830221563581432126772060",
+    "class": "root:org.kevoree.ContainerRoot@0.43631966831162571446730875889",
+    "generated_KMF_ID": "0.43631966831162571446730875889",
     "nodes": [],
     "repositories": [],
     "hubs": [],
@@ -21,18 +21,18 @@
                             "packages": [],
                             "typeDefinitions": [
                                 {
-                                    "class": "org.kevoree.ComponentType@name=MQTTPubClient,version=2.0.0",
+                                    "class": "org.kevoree.ComponentType@name=MQTTPubClient,version=2.0.1",
                                     "abstract": "false",
                                     "name": "MQTTPubClient",
-                                    "version": "2.0.0",
+                                    "version": "2.0.1",
                                     "deployUnits": [
-                                        "packages[org]/packages[kevoree]/packages[library]/deployUnits[hashcode=,name=kevoree-comp-mqttpubclient,version=2.0.0]"
+                                        "/packages[org]/packages[kevoree]/packages[library]/deployUnits[hashcode=,name=kevoree-comp-mqttpubclient,version=2.0.1]"
                                     ],
                                     "superTypes": [],
                                     "dictionaryType": [
                                         {
-                                            "class": "org.kevoree.DictionaryType@0.90425222087651491432126772162",
-                                            "generated_KMF_ID": "0.90425222087651491432126772162",
+                                            "class": "org.kevoree.DictionaryType@0.9595996399875731446730875955",
+                                            "generated_KMF_ID": "0.9595996399875731446730875955",
                                             "attributes": [
                                                 {
                                                     "class": "org.kevoree.DictionaryAttribute@topic",
@@ -91,11 +91,11 @@
                             ],
                             "deployUnits": [
                                 {
-                                    "class": "org.kevoree.DeployUnit@hashcode=,name=kevoree-comp-mqttpubclient,version=2.0.0",
+                                    "class": "org.kevoree.DeployUnit@hashcode=,name=kevoree-comp-mqttpubclient,version=2.0.1",
                                     "name": "kevoree-comp-mqttpubclient",
                                     "hashcode": "",
                                     "url": "",
-                                    "version": "2.0.0",
+                                    "version": "2.0.1",
                                     "requiredLibs": [],
                                     "filters": [
                                         {
