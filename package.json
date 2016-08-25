@@ -1,9 +1,10 @@
 {
   "name": "kevoree-comp-mqttpubclient",
-  "version": "2.0.1",
+  "version": "2.0.2-alpha",
   "main": "./lib/MQTTPubClient.js",
+  "description": "Publishes the messages it receives to its input ports to the specified MQTT <strong>host</strong>:<strong>port</strong> and <strong>topic</strong>",
   "kevoree": {
-    "package": "org.kevoree.library"
+    "namespace": "kevoree"
   },
   "scripts": {
     "prepublish": "grunt",
@@ -16,13 +17,14 @@
     "comp"
   ],
   "dependencies": {
-    "kevoree-entities": "^8.0.0",
+    "kevoree-entities": "^9.0.0-alpha.0",
     "mqtt": "^1.1.3"
   },
   "devDependencies": {
-    "grunt": "^0.4.1",
-    "grunt-kevoree": "^5.0.0",
-    "grunt-kevoree-genmodel": "^2.0.0",
-    "grunt-kevoree-registry": "^2.0.0"
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-kevoree": "^5.9.0-alpha.2",
+    "grunt-kevoree-genmodel": "^3.0.0",
+    "grunt-kevoree-registry": "^3.0.1"
   }
 }
