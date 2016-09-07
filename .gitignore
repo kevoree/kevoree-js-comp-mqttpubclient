@@ -30,3 +30,4 @@ node_modules
 .idea
 
 kevlib.json
+browser/kevoree-comp-mqttpubclient*.js
