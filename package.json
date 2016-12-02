@@ -1,14 +1,15 @@
 {
   "name": "kevoree-comp-mqttpubclient",
-  "version": "2.0.2-alpha.1",
+  "version": "2.0.2-beta",
   "main": "./lib/MQTTPubClient.js",
   "description": "Publishes the messages it receives to its input ports to the specified MQTT <strong>host</strong>:<strong>port</strong> and <strong>topic</strong>",
   "kevoree": {
     "namespace": "kevoree"
   },
   "scripts": {
-    "prepublish": "grunt",
-    "postpublish": "grunt publish"
+    "prepublish": "npm run lint && grunt",
+    "postpublish": "grunt publish",
+    "lint": "eslint lib"
   },
   "keywords": [
     "kevoree-std-lib",
@@ -17,15 +18,23 @@
     "comp"
   ],
   "dependencies": {
-    "kevoree-entities": "^9.0.0-alpha.0",
-    "mqtt": "^1.1.3"
+    "kevoree-entities": "^9.0.0",
+    "mqtt": "^2.1.3"
   },
   "devDependencies": {
+    "eslint": "^3.11.1",
     "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-contrib-uglify": "^0.8.0",
-    "grunt-kevoree": "^5.9.0-alpha.2",
-    "grunt-kevoree-genmodel": "^3.0.0",
-    "grunt-kevoree-registry": "^3.0.1"
+    "grunt-kevoree": "^5.9.1",
+    "grunt-kevoree-genmodel": "^3.0.1",
+    "grunt-kevoree-registry": "^3.0.3",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
   }
 }

@@ -1,8 +1,8 @@
-add node0: JavascriptNode
-add sync: WSGroup
-add node0.pubClient: MQTTPubClient
-add node0.ticker: Ticker
-add chan: LocalChannel
+add node0: JavascriptNode/LATEST/LATEST
+add sync: WSGroup/LATEST/LATEST
+add node0.pubClient: MQTTPubClient/1/LATEST
+add node0.ticker: Ticker/LATEST/LATEST
+add chan: LocalChannel/LATEST/LATEST
 
 attach node0 sync
 set sync.port/node0 = '9001'
@@ -10,6 +10,6 @@ set sync.port/node0 = '9001'
 bind node0.pubClient.pub chan
 bind node0.ticker.tick chan
 
-set node0.pubClient.host = 'mqtt.kevoree.org'
-set node0.pubClient.port = '81'
-set node0.pubClient.topic = 'mytopic'
+set node0.pubClient.host = 'test.mosquitto.org'
+set node0.pubClient.port = '1883'
+set node0.pubClient.topic = 'kevoree-tests'
