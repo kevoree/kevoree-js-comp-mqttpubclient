@@ -1,6 +1,6 @@
 {
   "name": "kevoree-comp-mqttpubclient",
-  "version": "2.0.2-beta",
+  "version": "2.0.2-beta.0",
   "main": "./lib/MQTTPubClient.js",
   "description": "Publishes the messages it receives to its input ports to the specified MQTT <strong>host</strong>:<strong>port</strong> and <strong>topic</strong>",
   "kevoree": {
